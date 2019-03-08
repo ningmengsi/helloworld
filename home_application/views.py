@@ -8,7 +8,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
 an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and limitations under the License.
 """
-import time
+
 from common.mymako import render_mako_context
 
 
@@ -32,9 +32,7 @@ def contactus(request):
     """
     return render_mako_context(request, '/home_application/contact.html')
 
+
 def helloworld(request):
-    """
-       联系我们
-     """
-    time.sleep(1)
+
     return render_mako_context(request, '/home_application/helloworld.html')
